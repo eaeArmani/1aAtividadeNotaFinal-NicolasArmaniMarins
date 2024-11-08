@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #1e3d2f;
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+        }
+
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #2c3e50; 
+        }
+
+        tr:nth-child(odd) {
+            background-color: #1a2521;
+        }
+
+        tr:hover {
+            background-color: #16a085;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Produtos</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mouse Gamer Razer DeathAdder</td>
+                <td>R$ 299,00</td>
+                <td>Mouse</td>
+                <td>Mouse ergonômico com sensor de 20.000 DPI e iluminação RGB.</td>
+            </tr>
+            <tr>
+                <td>Teclado Mecânico Corsair K95</td>
+                <td>R$ 1.099,00</td>
+                <td>Teclado</td>
+                <td>Teclado mecânico com switches Cherry MX, retroiluminação RGB e teclas programáveis.</td>
+            </tr>
+            <tr>
+                <td>Headset Logitech G Pro X</td>
+                <td>R$ 799,00</td>
+                <td>Headset</td>
+                <td>Headset com microfone Blue VO!CE, som surround e drivers PRO-G 50mm.</td>
+            </tr>
+            <tr>
+                <td>Controle Xbox Elite Series 2</td>
+                <td>R$ 1.299,00</td>
+                <td>Controle</td>
+                <td>Controle personalizável com ajuste de sensibilidade e design ergonômico.</td>
+            </tr>
+            <tr>
+                <td>Mousepad SteelSeries QcK Prism</td>
+                <td>R$ 249,00</td>
+                <td>Mousepad</td>
+                <td>Mousepad com iluminação RGB e tecido otimizado para alta performance em jogos.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
